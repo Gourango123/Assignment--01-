@@ -1,0 +1,139 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Our Products */
+
+
+.Products-img-1{
+  position: relative;
+}
+.Products-img-1::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 23px;
+  width: 44px;
+  height: 44px;
+  background-image: url(../home/img/Products/icon/Label.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 999;  
+}
+
+.Products-img-3{
+  position: relative;
+}
+.Products-img-3::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 23px;
+  width: 44px;
+  height: 44px;
+  background-image:url(../home/img/Products/icon/Label\ \(1\).png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 999;  
+}
+
+.Products-img-4{
+  position: relative;
+}
+.Products-img-4::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 23px;
+  width: 44px;
+  height: 44px;
+  background-image:url(../home/img/Products/icon/Label\ \(2\).png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 999;  
+}
+
+
+
+/* Our Products end */
+
+
+
+@media (max-width: 768px) {
+
+
+    .container{
+        text-align: center;
+        padding: 20px;
+      }
+  
+  
+  
+  
+    /* Asgaard sofa */
+  
+  
+    .Asgaardsofa-box-1{
+        margin-left: 39px;
+    }
+  
+    .box-item{
+      display: flex;
+      justify-content: center;
+    }
+
+
+    
+    /* Asgaard sofa */
+  
+
+}
+
+/* mobaile */
+
+@media (max-width: 480px) {
+  .container{
+      text-align: center;
+      padding: 20px;
+    }
+
+
+  /* hero */
+
+
+ 
+    
+
+  /*hero end */
+
+
+
+
+  /* Asgaard sofa */
+
+
+  .Asgaardsofa-box-1{
+    width: 388px;
+    margin-left: 0px;
+   }
+
+
+    .box-item{
+      display: flex;
+      justify-content: center;
+    }
+
+  /* Asgaard sofa */
+
+
+
+
+}

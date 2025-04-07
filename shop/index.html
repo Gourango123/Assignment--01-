@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gourango roy</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!--style css-->
+  <link rel="stylesheet" href="./style.css">
+
+  <!--font-awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+<!-- Navbar -->
+  <nav class=" nav container mx-auto fixed top-0 left-0 right-0 z-50 ">
+    <div class="flex items-center justify-between">
+
+      <div class="">
+        <img src="../home/img/Frame 168.png" alt="">
+      </div>
+
+      <div class="hidden md:flex space-x-4">
+        <a href="../home/index.html" class="text-2xl hover:bg-blue-700 px-3 py-2 rounded">Home</a>
+        <a href="../shop/index.html" class="text-2xl hover:bg-blue-700 px-3 py-2 rounded">Shop</a>
+        <a href="#" class="text-2xl hover:bg-blue-700 px-3 py-2 rounded">About</a>
+        <a href="../Contact/index.html" class="text-2xl hover:bg-blue-700 px-3 py-2 rounded">Contact</a>
+      </div>
+
+      <div class="hidden md:flex space-x-4 gap-6 text-gray-700">
+        <a href="#"><i class="text-2xl fa-solid fa-user-plus"></i></a>
+        <a href="#"><i class="text-2xl fa-solid fa-magnifying-glass"></i></a>
+        <a href="#"><i class="text-2xl fa-solid fa-heart"></i></a>
+        <a href="#"><i class="text-2xl fa-solid fa-cart-shopping"></i></a>
+      </div>
+
+
+      <div class="md:hidden">
+        <button class="text-black" id="mobile-menu-button">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden bg-blue-600 p-4 hidden text-white">
+      <a href="#" class="text-white block px-3 py-2 rounded">Home</a>
+      <a href="#" class="text-white block px-3 py-2 rounded">About</a>
+      <a href="#" class="text-white block px-3 py-2 rounded">Services</a>
+      <a href="#" class="text-white block px-3 py-2 rounded">Contact</a>
+    </div>
+  </nav>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+  
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    });
+  </script>
+
+<!-- Navbar end -->
+
+
+
+<!-- hero-->
+
+
+ <div class="hero mt-12">
+
+    <div class="hero-box flex flex-col gap-6 justify-center items-center h-[300px] text-center">
+        <h1 class="text-6xl font-bold">Shop</h1>
+        <p class="text-3xl">Home > Shop</p>
+        
+    </div>
+
+</div>
+
+
+<div class="bg-red-100">
+
+  <div class="container mx-auto">
+
+      <div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 px-10 py-2 ">
+
+          <div class="flex gap-5 items-center">
+  
+              <div class=" hero-2-con-1 flex gap-5 items-center">
+                  <i class="fa-solid fa-sliders"></i>
+                  <h4>Filter</h4>
+                  <i class="fa-solid fa-grip"></i>
+                  <i class="fa-solid fa-tv"></i>
+              </div>
+              <div class="border-l-2 border-black p-4">
+                <h5>Showing 1–16 of 32 results</h5>
+              </div>
+  
+          </div>
+  
+          <div class="hero-2-con-2 flex items-center justify-end gap-10">
+
+            <div class="flex items-center gap-10 text-strat">
+              <h3>Show</h3>
+              <h4 class="bg-white py-1 px-2">16</h4>
+            </div>
+
+            <div class="flex items-center gap-10">
+              <h3>Sort by</h3>
+              <h4 class="bg-white py-2 px-8 shadow-md rounded-lg cursor-pointer">Default</h4>
+            </div>
+
+          </div>
+          
+      </div>
+
+  </div>
+
+</div> 
+
+
+<!-- hero end -->
+
+
+<!--Browse The Range end -->
+
+
+
+<!--Our Products -->
+
+
+<div class="mt-20">
+
+  <div class=" container mx-auto px-10">
+  
+    <div class="Products-img-con grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 gap-10">
+      
+      <!--Product img-1 -->
+
+      <div class=" Products-img-1 Products-img flex flex-col gap-5 bg-gray-200">
+
+        <div class="">
+          <img class="g" src="../home/img/Products/1.png" alt="">
+        </div>
+        <div class=" p-5 flex flex-col gap-2">
+          <h1 class="text-2xl font-medium">Syltherine</h1>
+          <h6 class="text-gray-400">Stylish cafe chair</h6>
+          <div class="flex justify-between">
+            <h4>Rp 2.500.000</h4>
+            <p class="line-through text-gray-400">Rp 3.500.000</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!--Product img-2 -->
+
+      <div class=" Products-img-2 Products-img flex flex-col gap-5 bg-gray-400">
+
+        <div class="">
+          <img class="g opacity-25" src="./img/pro-image 2.png" alt="">
+        </div>
+        <div class=" p-5 flex flex-col gap-2">
+          <h1 class="text-2xl font-medium">Syltherine</h1>
+          <h6 class="text-gray-400">Stylish cafe chair</h6>
+          <div class="flex justify-between">
+            <h4>Rp 2.500.000</h4>
+            <p class="line-through text-gray-400">Rp 3.500.000</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!--Product img-3 -->
+
+      <div class=" Products-img-3 Products-img flex  flex-col gap-5 bg-gray-200">
+
+        <div class="">
+          <img class="g" src="../home/img/Products/3.png" alt="">
+        </div>
+        <div class=" p-5 flex flex-col gap-2">
+          <h1 class="text-2xl font-medium">Lolito</h1>
+          <h6 class="text-gray-400">Luxury big sofa</h6>
+          <div class="flex justify-between">
+            <h4>Rp 7.000.000</h4>
+            <p class="line-through text-gray-400">Rp 14.000.000</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!--Product img-4 -->
+
+      <div class=" Products-img-4 Products-img flex flex-col gap-5 bg-gray-200">
+
+        <div class="">
+          <img class="g" src="../home/img/Products/4.png" alt="">
+        </div>
+        <div class=" p-5 flex flex-col gap-2">
+          <h1 class="text-2xl font-medium">Respira</h1>
+          <h6 class="text-gray-400">Outdoor bar table and stool</h6>
+          <div class="">
+            <h4>Rp 500.000</h4>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- 2 -->
+
+    <div class="Products-img-con grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 gap-10">
+      
+      <!--Product img-1 -->
+
+      <div class=" Products-img-1 Products-img flex flex-col gap-5 bg-gray-200">
+
+        <div class="">
+          <img class="g" src="../home/img/Products/1.png" alt="">
+        </div>
+        <div class=" p-5 flex flex-col gap-2">
+          <h1 class="text-2xl font-medium">Syltherine</h1>
+          <h6 class="text-gray-400">Stylish cafe chair</h6>
+          <div class="flex justify-between">
+            <h4>Rp 2.500.000</h4>
+            <p class="line-through text-gray-400">Rp 3.500.000</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!--Product img-2 -->
+
+      <div class=" Products-img-2 Products-img flex flex-col gap-5 bg-gray-200">
+
+        <div class="">
+          <img class="g opacity-25" src="./img/pro-image 2.png" alt="">
+        </div>
+        <div class=" p-5 flex flex-col gap-2">
+          <h1 class="text-2xl font-medium">Syltherine</h1>
+          <h6 class="text-gray-400">Stylish cafe chair</h6>
+          <div class="flex justify-between">
+            <h4>Rp 2.500.000</h4>
+            <p class="line-through text-gray-400">Rp 3.500.000</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!--Product img-3 -->
+
+      <div class=" Products-img-3 Products-img flex  flex-col gap-5 bg-gray-200">
+
+        <div class="">
+          <img class="g" src="../home/img/Products/3.png" alt="">
+        </div>
+        <div class=" p-5 flex flex-col gap-2">
+          <h1 class="text-2xl font-medium">Lolito</h1>
+          <h6 class="text-gray-400">Luxury big sofa</h6>
+          <div class="flex justify-between">
+            <h4>Rp 7.000.000</h4>
+            <p class="line-through text-gray-400">Rp 14.000.000</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!--Product img-4 -->
+
+      <div class=" Products-img-4 Products-img flex flex-col gap-5 bg-gray-200">
+
+        <div class="">
+          <img class="g" src="../home/img/Products/4.png" alt="">
+        </div>
+        <div class=" p-5 flex flex-col gap-2">
+          <h1 class="text-2xl font-medium">Respira</h1>
+          <h6 class="text-gray-400">Outdoor bar table and stool</h6>
+          <div class="">
+            <h4>Rp 500.000</h4>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- 3 -->
+
+    <div class="Products-img-con grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 gap-10">
+      
+      <!--Product img-1 -->
+
+      <div class=" Products-img-1 Products-img flex flex-col gap-5 bg-gray-200">
+
+        <div class="">
+          <img class="g" src="../home/img/Products/1.png" alt="">
+        </div>
+        <div class=" p-5 flex flex-col gap-2">
+          <h1 class="text-2xl font-medium">Syltherine</h1>
+          <h6 class="text-gray-400">Stylish cafe chair</h6>
+          <div class="flex justify-between">
+            <h4>Rp 2.500.000</h4>
+            <p class="line-through text-gray-400">Rp 3.500.000</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!--Product img-2 -->
+
+      <div class=" Products-img-2 Products-img flex flex-col gap-5 bg-gray-200">
+
+        <div class="">
+          <img class="g opacity-25" src="./img/pro-image 2.png" alt="">
+        </div>
+        <div class=" p-5 flex flex-col gap-2">
+          <h1 class="text-2xl font-medium">Syltherine</h1>
+          <h6 class="text-gray-400">Stylish cafe chair</h6>
+          <div class="flex justify-between">
+            <h4>Rp 2.500.000</h4>
+            <p class="line-through text-gray-400">Rp 3.500.000</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!--Product img-3 -->
+
+      <div class=" Products-img-3 Products-img flex  flex-col gap-5 bg-gray-200">
+
+        <div class="">
+          <img class="g" src="../home/img/Products/3.png" alt="">
+        </div>
+        <div class=" p-5 flex flex-col gap-2">
+          <h1 class="text-2xl font-medium">Lolito</h1>
+          <h6 class="text-gray-400">Luxury big sofa</h6>
+          <div class="flex justify-between">
+            <h4>Rp 7.000.000</h4>
+            <p class="line-through text-gray-400">Rp 14.000.000</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!--Product img-4 -->
+
+      <div class=" Products-img-4 Products-img flex flex-col gap-5 bg-gray-200">
+
+        <div class="">
+          <img class="g" src="../home/img/Products/4.png" alt="">
+        </div>
+        <div class=" p-5 flex flex-col gap-2">
+          <h1 class="text-2xl font-medium">Respira</h1>
+          <h6 class="text-gray-400">Outdoor bar table and stool</h6>
+          <div class="">
+            <h4>Rp 500.000</h4>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- 4 -->
+
+    <div class="Products-img-con grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 gap-10">
+      
+      <!--Product img-1 -->
+
+      <div class=" Products-img-1 Products-img flex flex-col gap-5 bg-gray-200">
+
+        <div class="">
+          <img class="g" src="../home/img/Products/1.png" alt="">
+        </div>
+        <div class=" p-5 flex flex-col gap-2">
+          <h1 class="text-2xl font-medium">Syltherine</h1>
+          <h6 class="text-gray-400">Stylish cafe chair</h6>
+          <div class="flex justify-between">
+            <h4>Rp 2.500.000</h4>
+            <p class="line-through text-gray-400">Rp 3.500.000</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!--Product img-2 -->
+
+      <div class=" Products-img-2 Products-img flex flex-col gap-5 bg-gray-200">
+
+        <div class="">
+          <img class="g opacity-25" src="./img/pro-image 2.png" alt="">
+        </div>
+        <div class=" p-5 flex flex-col gap-2">
+          <h1 class="text-2xl font-medium">Syltherine</h1>
+          <h6 class="text-gray-400">Stylish cafe chair</h6>
+          <div class="flex justify-between">
+            <h4>Rp 2.500.000</h4>
+            <p class="line-through text-gray-400">Rp 3.500.000</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!--Product img-3 -->
+
+      <div class=" Products-img-3 Products-img flex  flex-col gap-5 bg-gray-200">
+
+        <div class="">
+          <img class="g" src="../home/img/Products/3.png" alt="">
+        </div>
+        <div class=" p-5 flex flex-col gap-2">
+          <h1 class="text-2xl font-medium">Lolito</h1>
+          <h6 class="text-gray-400">Luxury big sofa</h6>
+          <div class="flex justify-between">
+            <h4>Rp 7.000.000</h4>
+            <p class="line-through text-gray-400">Rp 14.000.000</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!--Product img-4 -->
+
+      <div class=" Products-img-4 Products-img flex flex-col gap-5 bg-gray-200">
+
+        <div class="">
+          <img class="g" src="../home/img/Products/4.png" alt="">
+        </div>
+        <div class=" p-5 flex flex-col gap-2">
+          <h1 class="text-2xl font-medium">Respira</h1>
+          <h6 class="text-gray-400">Outdoor bar table and stool</h6>
+          <div class="">
+            <h4>Rp 500.000</h4>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- button -->
+
+
+    <div class="w-[300px] mx-auto grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10 sm:justify-center justify-center">
+      <button class="border border-orange-400 text-orange-400 px-5 rounded-lg py-1 bg-red-200">1</button>
+      <button class="border border-orange-400 text-orange-400 px-5 rounded-lg py-1">2</button>
+      <button class="border border-orange-400 text-orange-400 px-5 rounded-lg py-1">3</button>
+      <button class="border border-orange-400 text-orange-400 px-5 rounded-lg py-1">Next</button>
+    </div>
+  
+  </div>
+    
+
+</div>
+
+
+<!--Our Products end -->
+
+
+
+
+<!--High Quality -->
+
+
+<div class="bg-red-200 py-10 mt-20">
+
+  <div class=" container mx-auto">
+
+    <div class=" High-Quality grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 sm:justify-center  gap-10">
+
+      <!-- item-1 -->
+
+      <div class="flex gap-4 items-center">
+
+        <div class="">
+          <img src="./img/High Quality/trophy 1.png" alt="">
+        </div>
+
+        <div class="">
+          <h1 class="text-xl font-semibold">High Quality</h1>
+          <p class="text-gray-400">crafted from top materials</p>
+        </div>
+
+      </div>
+
+      <!-- item-2 -->
+
+      <div class="flex gap-4 items-center">
+
+        <div class="">
+          <img src="./img/High Quality/2.png" alt="">
+        </div>
+
+        <div class="">
+          <h1  class="text-xl font-semibold">Warranty Protection</h1>
+          <p class="text-gray-400">Over 2 years</p>
+        </div>
+
+      </div>
+
+      <!-- item-3 -->
+
+      <div class="flex gap-4 items-center">
+
+        <div class="">
+          <img src="./img/High Quality/3.png" alt="">
+        </div>
+
+        <div class="">
+          <h1  class="text-xl font-semibold">Free Shipping</h1>
+          <p class="text-gray-400">Order over 150 $</p>
+        </div>
+
+      </div>
+
+      <!-- item-4 -->
+
+      <div class="flex gap-4 items-center">
+
+        <div class="">
+          <img src="./img/High Quality/4.png" alt="">
+        </div>
+
+        <div class="">
+          <h1  class="text-xl font-semibold">Free Shipping</h1>
+          <p class="text-gray-400">Order over 150 $</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!--High Quality end -->
+
+
+<!--footer-->
+
+
+<div class="mt-20">
+
+  <div class=" container mx-auto px-10">
+
+    <div class="footer grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-10">
+
+      <div class=" flex flex-col gap-10">
+        <div class="">
+          <h1 class="text-3xl font-bold">Funiro</h1>
+        </div>
+        <div class="">
+          <p>400 University Drive Suite 200 Coral </p>
+          <p>Gables,</p>
+          <p> 33134 USA</p>
+        </div>
+      </div>
+
+      <div class="flex justify-between">
+        <div class="">
+          <ul class="flex flex-col gap-8">
+            <li class="text-gray-400">Links</li>
+            <li>Home</li>
+            <li>Shop</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+
+        <div class="">
+          <ul class="flex flex-col gap-8">
+            <li class="text-gray-400">Links</li>
+            <li>Home</li>
+            <li>Shop</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+
+      
+
+      </div>
+
+      <div class="">
+        <div class="">
+          <ul class="flex flex-col gap-8">
+            <div class="">
+              <h6 class="text-gray-400">Newsletter</h6>
+            </div>
+            <div class="flex justify-between">
+              <div class=""><h6>Enter Your Email Address</h6><hr class="border-t-2 border-black my-2"></div>
+              <div class=""><h6>SUBSCRIBE</h6><hr class="border-t-2 border-black my-2"></div>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="my-10">
+      <p>2023 furino. All rights reverved</p>
+    </div>
+
+
+  </div>
+
+</div>
+
+
+<!--#footer end -->
+
+</body>
+</html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gourango roy Blog</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!--style css-->
+  <link rel="stylesheet" href="./style.css">
+
+  <!--font-awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+<!-- Navbar -->
+  <nav class=" nav container mx-auto fixed top-0 left-0 right-0 z-50 ">
+    <div class="flex items-center justify-between">
+
+      <div class="">
+        <img src="../home/img/Frame 168.png" alt="">
+      </div>
+
+      <div class="hidden md:flex space-x-4">
+        <a href="#" class="text-2xl hover:bg-blue-700 px-3 py-2 rounded">Home</a>
+        <a href="#" class="text-2xl hover:bg-blue-700 px-3 py-2 rounded">Shop</a>
+        <a href="#" class="text-2xl hover:bg-blue-700 px-3 py-2 rounded">About</a>
+        <a href="#" class="text-2xl hover:bg-blue-700 px-3 py-2 rounded">Contact</a>
+      </div>
+
+      <div class="hidden md:flex space-x-4 gap-6 text-gray-700">
+        <a href="#"><i class="text-2xl fa-solid fa-user-plus"></i></a>
+        <a href="#"><i class="text-2xl fa-solid fa-magnifying-glass"></i></a>
+        <a href="#"><i class="text-2xl fa-solid fa-heart"></i></a>
+        <a href="#"><i class="text-2xl fa-solid fa-cart-shopping"></i></a>
+      </div>
+
+
+      <div class="md:hidden">
+        <button class="text-black" id="mobile-menu-button">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden bg-blue-600 p-4 hidden text-white">
+      <a href="#" class="text-white block px-3 py-2 rounded">Home</a>
+      <a href="#" class="text-white block px-3 py-2 rounded">About</a>
+      <a href="#" class="text-white block px-3 py-2 rounded">Services</a>
+      <a href="#" class="text-white block px-3 py-2 rounded">Contact</a>
+    </div>
+  </nav>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+  
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    });
+  </script>
+
+<!-- Navbar end -->
+
+
+
+<!-- hero-->
+
+
+ <div class="hero mt-12">
+
+    <div class="hero-box flex flex-col gap-6 justify-center items-center h-[300px] text-center pb-14">
+        <img src="../Cart/img/Meubel House_Logos-05.png" alt="">
+        <h1 class="text-6xl font-bold">Blog</h1>
+        <p class="text-3xl">Home > Blog</p>
+        
+    </div>
+
+</div>
+
+
+
+<!-- hero end -->
+
+
+
+
+<!-- Blog-->
+
+
+<div class="mt-20">
+  
+    <div class=" container mx-auto px-10">
+
+        <div class="flex gap-10">
+
+            <!-- box-1 -->
+
+            <div class="w-[900px] flex flex-col gap-8">
+
+                <!-- item-1 -->
+
+                <div class="flex flex-col gap-4">
+                    <img src="./img/1.png" alt="">
+
+                    <div class="flex gap-10">
+                        <div class="">
+                            <i class="fas fa-user-tie text-gray-700 mr-2 text-gray-400"></i>
+                            <span class="text-gray-400">Admin</span>
+                        </div>
+                        <div class="">
+                            <i class="fas fa-calendar-alt text-gray-400 mr-2"></i>
+                            <span class="text-gray-400">14 Oct 2022</span>
+                        </div>
+                        <div class="">
+                            <i class="fas fa-tag text-gray-400 mr-2"></i>
+                            <span class="text-gray-400">Wood</span>
+                        </div>
+                    </div>
+
+                    <h1 class="text-3xl font-semibold ">Going all-in with millennial design</h1>
+
+                    <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.</p>
+
+                    <button class="w-[100px] border-b-2 border-black font-semibold pb-3">
+                    Read more
+                    </button>
+                      
+
+                </div>
+
+                <!-- item-2 -->
+                 
+                <div class="flex flex-col gap-4">
+                    <img src="./img/2.png" alt="">
+
+                    <div class="flex gap-10">
+                        <div class="">
+                            <i class="fas fa-user-tie text-gray-700 mr-2 text-gray-400"></i>
+                            <span class="text-gray-400">Admin</span>
+                        </div>
+                        <div class="">
+                            <i class="fas fa-calendar-alt text-gray-400 mr-2"></i>
+                            <span class="text-gray-400">14 Oct 2022</span>
+                        </div>
+                        <div class="">
+                            <i class="fas fa-tag text-gray-400 mr-2"></i>
+                            <span class="text-gray-400">Wood</span>
+                        </div>
+                    </div>
+
+                    <h1 class="text-3xl font-semibold ">Exploring new ways of decorating</h1>
+
+                    <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.</p>
+
+                    <button class="w-[100px] border-b-2 border-black font-semibold pb-3">
+                    Read more
+                    </button>
+                      
+
+                </div>
+
+                <!-- item-3 -->
+                 
+                <div class="flex flex-col gap-4">
+                    <img src="./img/3.png" alt="">
+
+                    <div class="flex gap-10">
+                        <div class="">
+                            <i class="fas fa-user-tie text-gray-700 mr-2 text-gray-400"></i>
+                            <span class="text-gray-400">Admin</span>
+                        </div>
+                        <div class="">
+                            <i class="fas fa-calendar-alt text-gray-400 mr-2"></i>
+                            <span class="text-gray-400">14 Oct 2022</span>
+                        </div>
+                        <div class="">
+                            <i class="fas fa-tag text-gray-400 mr-2"></i>
+                            <span class="text-gray-400">Wood</span>
+                        </div>
+                    </div>
+
+                    <h1 class="text-3xl font-semibold ">Handmade pieces that took time to make</h1>
+
+                    <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.</p>
+
+                    <button class="w-[100px] border-b-2 border-black font-semibold pb-3">
+                    Read more
+                    </button>
+                      
+
+                </div>
+
+                <!-- item-4-->
+
+                <div class="flex justify-end gap-20 text-right mt-10">
+                    <div class="bg-orange-400 px-8 py-2 rounded-lg">1</div>
+                    <div class="bg-gray-200 px-8 py-2 rounded-lg">2</div>
+                    <div class="bg-gray-200 px-8 py-2 rounded-lg">3</div>
+                    <div class="bg-gray-200 px-8 py-2 rounded-lg">Next</div>
+                </div>
+
+
+            </div>
+
+            <!-- box-2 -->
+
+            <div class="">
+
+                <!-- item-1 -->
+
+                <div class="flex flex-col gap-8">
+
+                    <div class="relative w-full max-w-md">
+                        <input
+                          type="text"
+                          class="w-full border border-gray-300 rounded-lg py-2 px-4 pr-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                        <i class="fa-solid fa-magnifying-glass absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-blue-600 cursor-pointer"></i>
+                    </div>
+
+                    <div class="text-gray-400 pl-10">
+                        <ul class="flex flex-col gap-8">
+                            <li class="text-black text-2xl">Categories</li>
+                            <li>Crafts</li>
+                            <li>Design</li>
+                            <li>Handmade</li>
+                            <li>Interior</li>
+                            <li>Wood</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- item-2 -->
+
+                <div class="mt-20 pl-10 flex flex-col gap-10">
+
+                  <h1>Recent Posts</h1>
+
+                  <!-- img-1 -->
+
+                  <div class="flex gap-10">
+
+                        <div class="">
+                            <img src="./img/box-2/1.png" alt="">
+                        </div>
+                        <div class="">
+                          <p>Going all-in with millennial design</p>
+                          <h6 class="text-gray-400">03 Aug 2022</h6>
+                        </div>
+
+                  </div>
+
+                  <!-- img-2 -->
+
+                  <div class="flex gap-10">
+
+                    <div class="">
+                        <img src="./img/box-2/2.png" alt="">
+                    </div>
+                    <div class="">
+                      <p>Exploring new ways of decorating</p>
+                      <h6 class="text-gray-400">03 Aug 2022</h6>
+                    </div>
+
+                  </div>
+
+                  <!-- img-3 -->
+
+                  <div class="flex gap-10">
+
+                    <div class="">
+                        <img src="./img/box-2/3.png" alt="">
+                    </div>
+                    <div class="">
+                      <p>Handmade pieces that took time to make</p>
+                      <h6 class="text-gray-400">03 Aug 2022</h6>
+                    </div>
+
+                  </div>
+
+                  <!-- img-4 -->
+
+                  <div class="flex gap-10">
+
+                    <div class="">
+                        <img src="./img/box-2/4.png" alt="">
+                    </div>
+                    <div class="">
+                      <p>Modern home in Milan</p>
+                      <h6 class="text-gray-400">03 Aug 2022</h6>
+                    </div>
+
+                  </div>
+
+                  <!-- img-5 -->
+
+                  <div class="flex gap-10">
+
+                    <div class="">
+                        <img src="./img/box-2/5.png" alt="">
+                    </div>
+                    <div class="">
+                      <p>Colorful office redesign</p>
+                      <h6 class="text-gray-400">03 Aug 2022</h6>
+                    </div>
+
+                  </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- Blog end -->
+
+
+
+
+
+
+<!--High Quality -->
+
+
+<div class="bg-red-200 py-10 mt-20">
+
+    <div class=" container mx-auto">
+  
+      <div class=" High-Quality grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 sm:justify-center  gap-10">
+  
+        <!-- item-1 -->
+  
+        <div class="flex gap-4 items-center">
+  
+          <div class="">
+            <img src="../shop/img/High Quality/trophy 1.png" alt="">
+          </div>
+  
+          <div class="">
+            <h1 class="text-xl font-semibold">High Quality</h1>
+            <p class="text-gray-400">crafted from top materials</p>
+          </div>
+  
+        </div>
+  
+        <!-- item-2 -->
+  
+        <div class="flex gap-4 items-center">
+  
+          <div class="">
+            <img src="../shop/img/High Quality/2.png" alt="">
+          </div>
+  
+          <div class="">
+            <h1  class="text-xl font-semibold">Warranty Protection</h1>
+            <p class="text-gray-400">Over 2 years</p>
+          </div>
+  
+        </div>
+  
+        <!-- item-3 -->
+  
+        <div class="flex gap-4 items-center">
+  
+          <div class="">
+            <img src="../shop/img/High Quality/3.png" alt="">
+          </div>
+  
+          <div class="">
+            <h1  class="text-xl font-semibold">Free Shipping</h1>
+            <p class="text-gray-400">Order over 150 $</p>
+          </div>
+  
+        </div>
+  
+        <!-- item-4 -->
+  
+        <div class="flex gap-4 items-center">
+  
+          <div class="">
+            <img src="../shop/img/High Quality/4.png" alt="">
+          </div>
+  
+          <div class="">
+            <h1  class="text-xl font-semibold">Free Shipping</h1>
+            <p class="text-gray-400">Order over 150 $</p>
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+  
+</div>
+  
+  
+  
+<!--High Quality end -->
+  
+  
+<!--footer-->
+  
+  
+<div class="mt-20">
+  
+      <div class=" container mx-auto px-10">
+    
+        <div class="footer grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-10">
+    
+          <div class=" flex flex-col gap-10">
+            <div class="">
+              <h1 class="text-3xl font-bold">Funiro</h1>
+            </div>
+            <div class="">
+              <p>400 University Drive Suite 200 Coral </p>
+              <p>Gables,</p>
+              <p> 33134 USA</p>
+            </div>
+          </div>
+    
+          <div class="flex justify-between">
+            <div class="">
+              <ul class="flex flex-col gap-8">
+                <li class="text-gray-400">Links</li>
+                <li>Home</li>
+                <li>Shop</li>
+                <li>About</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+    
+            <div class="">
+              <ul class="flex flex-col gap-8">
+                <li class="text-gray-400">Links</li>
+                <li>Home</li>
+                <li>Shop</li>
+                <li>About</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+    
+          
+    
+          </div>
+    
+          <div class="">
+            <div class="">
+              <ul class="flex flex-col gap-8">
+                <div class="">
+                  <h6 class="text-gray-400">Newsletter</h6>
+                </div>
+                <div class="flex justify-between">
+                  <div class=""><h6>Enter Your Email Address</h6><hr class="border-t-2 border-black my-2"></div>
+                  <div class=""><h6>SUBSCRIBE</h6><hr class="border-t-2 border-black my-2"></div>
+                </div>
+              </ul>
+            </div>
+          </div>
+    
+        </div>
+    
+        <div class="my-10">
+          <p>2023 furino. All rights reverved</p>
+        </div>
+    
+    
+      </div>
+    
+</div>
+    
+<!--#footer end -->
+    
+</body>
+</html>

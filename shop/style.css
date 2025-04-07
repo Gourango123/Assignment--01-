@@ -1,0 +1,120 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* hero */
+
+
+.hero-box{
+    background-image: url(./img/hero-img.png);
+}
+/* hero end*/
+
+
+
+/* Our Products */
+
+
+.Products-img-1{
+    position: relative;
+}
+.Products-img-1::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: 23px;
+    width: 44px;
+    height: 44px;
+    background-image: url(../home/img/Products/icon/Label.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 999;  
+}
+
+.Products-img-3{
+    position: relative;
+}
+.Products-img-3::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: 23px;
+    width: 44px;
+    height: 44px;
+    background-image:url(../home/img/Products/icon/Label\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 999;  
+}
+
+.Products-img-4{
+    position: relative;
+}
+.Products-img-4::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: 23px;
+    width: 44px;
+    height: 44px;
+    background-image:url(../home/img/Products/icon/Label\ \(2\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 999;  
+}
+
+
+
+/* Our Products end */
+
+
+
+
+
+
+
+/* mobile  */
+
+
+@media screen and (max-width: 600px) and (min-width: 300px) {
+
+    .container{
+        text-align: center;
+    }
+
+    .nav{
+        padding: 15px;
+    }
+
+
+    /* Products */
+
+    .g{
+        width: 600px;
+        padding: 0;
+    }
+
+    /* Products end*/
+
+
+
+    /* High Quality */
+
+    .High-Quality{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        gap: 50px;
+    }
+
+    /* High Quality end */
+}
